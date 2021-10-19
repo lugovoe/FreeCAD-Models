@@ -1,0 +1,9 @@
+# To view the line-endings in files you can use the command 'git ls-files --eol'
+# It can be specified: 'w/crlf', 'w/lf', 'w/mixed', 'w/none'
+* text=auto	eol=CRLF
+
+*.brp
+*.xml
+*.cls
+*.log	working-tree-encoding=CP1251
+*.txt	working-tree-encoding=CP1251

@@ -1,0 +1,24 @@
+#############
+## Windows detritus
+#############
+#! schema/
+*.FCStd
+
+# Windows image file caches
+*[Tt]humbs.db
+
+# Folder config file
+[Dd]esktop.ini
+
+# Excel Backup File
+*.asd
+*.bak
+*.log
+*.xar
+*.xlk
+
+# Recycle Bin used on file shares
+~$*.doc*
+~$*.xls*
+$R[Ee][Cc][Yy][Cc][Ll][Ee].B[Ii][Nn]/
+*.tmp
