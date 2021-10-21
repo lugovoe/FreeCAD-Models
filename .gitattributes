@@ -4,7 +4,7 @@
 
 *.brp
 *.xml
-*.cls
+*.png
 *.log	working-tree-encoding=CP1251
 *.txt	working-tree-encoding=CP1251
 *.vbs	working-tree-encoding=CP1251
