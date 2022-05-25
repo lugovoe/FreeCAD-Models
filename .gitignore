@@ -2,7 +2,7 @@
 ## Windows detritus
 #############
 #! schema/
-*.FCStd
+*.FCStd*
 
 # Windows image file caches
 *[Tt]humbs.db
