@@ -25,17 +25,17 @@
         <Property name="Label" type="App::PropertyString" status="1">
             <String value="BeagleKeychain"/>
         </Property>
-        <Property name="LastModifiedBy" type="App::PropertyString">
-            <String value=""/>
+        <Property name="LastModifiedBy" type="App::PropertyString" status="1">
+            <String value="bopoh13"/>
         </Property>
         <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-            <String value="2022-05-25T15:36:25Z"/>
+            <String value="2022-05-25T20:49:48Z"/>
         </Property>
         <Property name="License" type="App::PropertyString" status="1">
-            <String value="All rights reserved"/>
+            <String value="Creative Commons Attribution-ShareAlike"/>
         </Property>
         <Property name="LicenseURL" type="App::PropertyString" status="1">
-            <String value="http://en.wikipedia.org/wiki/All_rights_reserved"/>
+            <String value="http://creativecommons.org/licenses/by-sa/4.0/"/>
         </Property>
         <Property name="Material" type="App::PropertyMap" status="1">
             <Map count="0">
@@ -55,8 +55,8 @@
             <Uuid value="8cee8569-2703-405b-91cb-8e9db99c35a9"/>
         </Property>
     </Properties>
-    <Objects Count="17" Dependencies="1">
-        <ObjectDeps Name="Body" Count="9">
+    <Objects Count="18" Dependencies="1">
+        <ObjectDeps Name="Body" Count="11">
             <Dep Name="Hole"/>
             <Dep Name="Origin"/>
             <Dep Name="Sketch"/>
@@ -66,6 +66,8 @@
             <Dep Name="Fillet"/>
             <Dep Name="Sketch002"/>
             <Dep Name="Hole"/>
+            <Dep Name="ShapeString"/>
+            <Dep Name="ShapeString001"/>
         </ObjectDeps>
         <ObjectDeps Name="Origin" Count="6">
             <Dep Name="X_Axis"/>
@@ -109,8 +111,9 @@
             <Dep Name="Fillet"/>
             <Dep Name="Body"/>
         </ObjectDeps>
-        <ObjectDeps Name="ShapeString" Count="0"/>
         <ObjectDeps Name="ShapeString001" Count="0"/>
+        <ObjectDeps Name="ShapeString" Count="0"/>
+        <ObjectDeps Name="Distance" Count="0"/>
         <Object type="PartDesign::Body" name="Body" id="4502" />
         <Object type="App::Origin" name="Origin" id="4503" />
         <Object type="App::Line" name="X_Axis" id="4504" />
@@ -126,10 +129,11 @@
         <Object type="PartDesign::Fillet" name="Fillet" id="4532" />
         <Object type="Sketcher::SketchObject" name="Sketch002" id="4533" />
         <Object type="PartDesign::Hole" name="Hole" id="4535" />
-        <Object type="Part::Part2DObjectPython" name="ShapeString" id="4536" />
         <Object type="Part::Part2DObjectPython" name="ShapeString001" id="4537" />
+        <Object type="Part::Part2DObjectPython" name="ShapeString" id="4536" />
+        <Object type="App::MeasureDistance" name="Distance" id="4547" Touched="1" />
     </Objects>
-    <ObjectData Count="17">
+    <ObjectData Count="18">
         <Object name="Body" Extensions="True">
             <Extensions Count="1">
                 <Extension type="App::OriginGroupExtension" name="OriginGroupExtension">
@@ -145,7 +149,7 @@
                     </ExpressionEngine>
                 </Property>
                 <Property name="Group" type="App::PropertyLinkList">
-                    <LinkList count="7">
+                    <LinkList count="9">
                         <Link value="Sketch"/>
                         <Link value="Pad"/>
                         <Link value="Sketch001"/>
@@ -153,6 +157,8 @@
                         <Link value="Fillet"/>
                         <Link value="Sketch002"/>
                         <Link value="Hole"/>
+                        <Link value="ShapeString"/>
+                        <Link value="ShapeString001"/>
                     </LinkList>
                 </Property>
                 <Property name="Label" type="App::PropertyString" status="134217728">
@@ -472,7 +478,7 @@
                     <String value=""/>
                 </Property>
                 <Property name="Length" type="App::PropertyLength">
-                    <Float value="5.0000000000000000"/>
+                    <Float value="4.0000000000000000"/>
                 </Property>
                 <Property name="Length2" type="App::PropertyLength">
                     <Float value="100.0000000000000000"/>
@@ -605,7 +611,7 @@
                     <Bool value="false"/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="8388612">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="5.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="4.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="Shape" type="Part::PropertyPartShape">
                     <Part file="PartShape4.brp"/>
@@ -788,7 +794,7 @@
                     <Bool value="false"/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="8388612">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="5.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="4.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="Shape" type="Part::PropertyPartShape">
                     <Part file="PartShape9.brp"/>
@@ -925,67 +931,6 @@
                 </Property>
             </Properties>
         </Object>
-        <Object name="ShapeString" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Part::AttachExtension" name="AttachExtension">
-                </Extension>
-            </Extensions>
-            <Properties Count="17" TransientCount="0">
-                <Property name="AttacherType" type="App::PropertyString" status="8">
-                    <String value="Attacher::AttachEnginePlane"/>
-                </Property>
-                <Property name="AttachmentOffset" type="App::PropertyPlacement" status="8">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="0">
-                    </ExpressionEngine>
-                </Property>
-                <Property name="FontFile" type="App::PropertyFile" group="Draft" doc="Font file name" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="C:/Windows/Fonts/arial.ttf"/>
-                </Property>
-                <Property name="Label" type="App::PropertyString" status="134217728">
-                    <String value="ShapeString"/>
-                </Property>
-                <Property name="Label2" type="App::PropertyString" status="67108992">
-                    <String value=""/>
-                </Property>
-                <Property name="MapMode" type="App::PropertyEnumeration">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="MapPathParameter" type="App::PropertyFloat" status="8">
-                    <Float value="0.0000000000000000"/>
-                </Property>
-                <Property name="MapReversed" type="App::PropertyBool" status="8">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Placement" type="App::PropertyPlacement" status="8388608">
-                    <PropertyPlacement Px="-19.3000000000000007" Py="-5.0000000000000000" Pz="3.5000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="Proxy" type="App::PropertyPythonObject">
-                    <Python value="IlNoYXBlU3RyaW5nIg==" encoded="yes" module="draftobjects.shapestring" class="ShapeString"/>
-                </Property>
-                <Property name="Shape" type="Part::PropertyPartShape">
-                    <Part file="PartShape12.brp"/>
-                </Property>
-                <Property name="Size" type="App::PropertyLength" group="Draft" doc="Height of text" attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="10.0000000000000000"/>
-                </Property>
-                <Property name="String" type="App::PropertyString" group="Draft" doc="Text string" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="09876"/>
-                </Property>
-                <Property name="Support" type="App::PropertyLinkSubList">
-                    <LinkSubList count="0">
-                    </LinkSubList>
-                </Property>
-                <Property name="Tracking" type="App::PropertyLength" group="Draft" doc="Inter-character spacing" attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="1.0000000000000000"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="649">
-                    <Bool value="false"/>
-                </Property>
-            </Properties>
-        </Object>
         <Object name="ShapeString001" Extensions="True">
             <Extensions Count="1">
                 <Extension type="Part::AttachExtension" name="AttachExtension">
@@ -1027,7 +972,7 @@
                     <Python value="IlNoYXBlU3RyaW5nIg==" encoded="yes" module="draftobjects.shapestring" class="ShapeString"/>
                 </Property>
                 <Property name="Shape" type="Part::PropertyPartShape">
-                    <Part file="PartShape13.brp"/>
+                    <Part file="PartShape12.brp"/>
                 </Property>
                 <Property name="Size" type="App::PropertyLength" group="Draft" doc="Height of text" attr="0" ro="0" hide="0" status="2097152">
                     <Float value="14.0000000000000000"/>
@@ -1043,6 +988,93 @@
                     <Float value="2.0000000000000000"/>
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="648">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </Object>
+        <Object name="ShapeString" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Part::AttachExtension" name="AttachExtension">
+                </Extension>
+            </Extensions>
+            <Properties Count="17" TransientCount="0">
+                <Property name="AttacherType" type="App::PropertyString" status="8">
+                    <String value="Attacher::AttachEnginePlane"/>
+                </Property>
+                <Property name="AttachmentOffset" type="App::PropertyPlacement" status="8">
+                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                </Property>
+                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+                    <ExpressionEngine count="0">
+                    </ExpressionEngine>
+                </Property>
+                <Property name="FontFile" type="App::PropertyFile" group="Draft" doc="Font file name" attr="0" ro="0" hide="0" status="2097152">
+                    <String value="C:/Windows/Fonts/arial.ttf"/>
+                </Property>
+                <Property name="Label" type="App::PropertyString" status="134217728">
+                    <String value="ShapeString"/>
+                </Property>
+                <Property name="Label2" type="App::PropertyString" status="67108992">
+                    <String value=""/>
+                </Property>
+                <Property name="MapMode" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="MapPathParameter" type="App::PropertyFloat" status="8">
+                    <Float value="0.0000000000000000"/>
+                </Property>
+                <Property name="MapReversed" type="App::PropertyBool" status="8">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Placement" type="App::PropertyPlacement" status="8388608">
+                    <PropertyPlacement Px="-19.3000000000000007" Py="-5.0000000000000000" Pz="3.5000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                </Property>
+                <Property name="Proxy" type="App::PropertyPythonObject">
+                    <Python value="IlNoYXBlU3RyaW5nIg==" encoded="yes" module="draftobjects.shapestring" class="ShapeString"/>
+                </Property>
+                <Property name="Shape" type="Part::PropertyPartShape">
+                    <Part file="PartShape13.brp"/>
+                </Property>
+                <Property name="Size" type="App::PropertyLength" group="Draft" doc="Height of text" attr="0" ro="0" hide="0" status="2097152">
+                    <Float value="10.0000000000000000"/>
+                </Property>
+                <Property name="String" type="App::PropertyString" group="Draft" doc="Text string" attr="0" ro="0" hide="0" status="2097152">
+                    <String value="09876"/>
+                </Property>
+                <Property name="Support" type="App::PropertyLinkSubList">
+                    <LinkSubList count="0">
+                    </LinkSubList>
+                </Property>
+                <Property name="Tracking" type="App::PropertyLength" group="Draft" doc="Inter-character spacing" attr="0" ro="0" hide="0" status="2097152">
+                    <Float value="1.0000000000000000"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="648">
+                    <Bool value="false"/>
+                </Property>
+            </Properties>
+        </Object>
+        <Object name="Distance">
+            <Properties Count="7" TransientCount="0">
+                <Property name="Distance" type="App::PropertyDistance" status="150994945">
+                    <Float value="1.5003164814156300"/>
+                </Property>
+                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108865">
+                    <ExpressionEngine count="0">
+                    </ExpressionEngine>
+                </Property>
+                <Property name="Label" type="App::PropertyString" status="134217729">
+                    <String value="Distance: 1,50 mm"/>
+                </Property>
+                <Property name="Label2" type="App::PropertyString" status="67108992">
+                    <String value=""/>
+                </Property>
+                <Property name="P1" type="App::PropertyVector" status="1">
+                    <PropertyVector valueX="-20.5305042266845703" valueY="5.7262811660766602" valueZ="4.0000000000000000"/>
+                </Property>
+                <Property name="P2" type="App::PropertyVector" status="1">
+                    <PropertyVector valueX="-20.5611038208007812" valueY="5.7226467132568359" valueZ="2.5000000000000000"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="649">
                     <Bool value="true"/>
                 </Property>
             </Properties>
