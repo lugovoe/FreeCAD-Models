@@ -17,7 +17,7 @@
             <String value="bopoh13"/>
         </Property>
         <Property name="CreationDate" type="App::PropertyString" status="16777217">
-            <String value="2022-05-25T13:06:29Z"/>
+            <String value="2022-05-26T16:53:36Z"/>
         </Property>
         <Property name="Id" type="App::PropertyString">
             <String value=""/>
@@ -29,7 +29,7 @@
             <String value="bopoh13"/>
         </Property>
         <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-            <String value="2022-05-25T20:49:48Z"/>
+            <String value="2022-05-26T23:21:16Z"/>
         </Property>
         <Property name="License" type="App::PropertyString" status="1">
             <String value="Creative Commons Attribution-ShareAlike"/>
@@ -52,22 +52,21 @@
             <String value=""/>
         </Property>
         <Property name="Uid" type="App::PropertyUUID" status="16777217">
-            <Uuid value="8cee8569-2703-405b-91cb-8e9db99c35a9"/>
+            <Uuid value="a1bca80e-d4b4-43bf-a6d8-1a31ed356261"/>
         </Property>
     </Properties>
-    <Objects Count="18" Dependencies="1">
-        <ObjectDeps Name="Body" Count="11">
-            <Dep Name="Hole"/>
+    <Objects Count="16" Dependencies="1">
+        <ObjectDeps Name="Spreadsheet" Count="0"/>
+        <ObjectDeps Name="Body" Count="9">
+            <Dep Name="Pad001"/>
             <Dep Name="Origin"/>
             <Dep Name="Sketch"/>
             <Dep Name="Pad"/>
             <Dep Name="Sketch001"/>
             <Dep Name="Pocket"/>
             <Dep Name="Fillet"/>
-            <Dep Name="Sketch002"/>
-            <Dep Name="Hole"/>
             <Dep Name="ShapeString"/>
-            <Dep Name="ShapeString001"/>
+            <Dep Name="Pad001"/>
         </ObjectDeps>
         <ObjectDeps Name="Origin" Count="6">
             <Dep Name="X_Axis"/>
@@ -83,57 +82,140 @@
         <ObjectDeps Name="XY_Plane" Count="0"/>
         <ObjectDeps Name="XZ_Plane" Count="0"/>
         <ObjectDeps Name="YZ_Plane" Count="0"/>
-        <ObjectDeps Name="Sketch" Count="1">
+        <ObjectDeps Name="Sketch" Count="3">
+            <Dep Name="Spreadsheet"/>
             <Dep Name="XY_Plane"/>
+            <Dep Name="Spreadsheet"/>
         </ObjectDeps>
-        <ObjectDeps Name="Pad" Count="2">
+        <ObjectDeps Name="Pad" Count="4">
             <Dep Name="Sketch"/>
             <Dep Name="Body"/>
+            <Dep Name="Spreadsheet"/>
+            <Dep Name="Spreadsheet"/>
         </ObjectDeps>
-        <ObjectDeps Name="Sketch001" Count="1">
-            <Dep Name="Pad"/>
+        <ObjectDeps Name="Sketch001" Count="3">
+            <Dep Name="Spreadsheet"/>
+            <Dep Name="XY_Plane"/>
+            <Dep Name="Spreadsheet"/>
         </ObjectDeps>
-        <ObjectDeps Name="Pocket" Count="3">
+        <ObjectDeps Name="Pocket" Count="5">
             <Dep Name="Sketch001"/>
             <Dep Name="Pad"/>
             <Dep Name="Body"/>
+            <Dep Name="Spreadsheet"/>
+            <Dep Name="Spreadsheet"/>
         </ObjectDeps>
-        <ObjectDeps Name="Fillet" Count="3">
+        <ObjectDeps Name="Fillet" Count="5">
             <Dep Name="Pocket"/>
             <Dep Name="Pocket"/>
             <Dep Name="Body"/>
+            <Dep Name="Spreadsheet"/>
+            <Dep Name="Spreadsheet"/>
         </ObjectDeps>
-        <ObjectDeps Name="Sketch002" Count="1">
-            <Dep Name="Fillet"/>
+        <ObjectDeps Name="ShapeString" Count="2">
+            <Dep Name="Spreadsheet"/>
+            <Dep Name="Spreadsheet"/>
         </ObjectDeps>
-        <ObjectDeps Name="Hole" Count="3">
-            <Dep Name="Sketch002"/>
+        <ObjectDeps Name="Pad001" Count="5">
+            <Dep Name="ShapeString"/>
             <Dep Name="Fillet"/>
             <Dep Name="Body"/>
+            <Dep Name="Spreadsheet"/>
+            <Dep Name="Spreadsheet"/>
         </ObjectDeps>
-        <ObjectDeps Name="ShapeString001" Count="0"/>
-        <ObjectDeps Name="ShapeString" Count="0"/>
-        <ObjectDeps Name="Distance" Count="0"/>
-        <Object type="PartDesign::Body" name="Body" id="4502" />
-        <Object type="App::Origin" name="Origin" id="4503" />
-        <Object type="App::Line" name="X_Axis" id="4504" />
-        <Object type="App::Line" name="Y_Axis" id="4505" />
-        <Object type="App::Line" name="Z_Axis" id="4506" />
-        <Object type="App::Plane" name="XY_Plane" id="4507" />
-        <Object type="App::Plane" name="XZ_Plane" id="4508" />
-        <Object type="App::Plane" name="YZ_Plane" id="4509" />
-        <Object type="Sketcher::SketchObject" name="Sketch" id="4511" />
-        <Object type="PartDesign::Pad" name="Pad" id="4512" />
-        <Object type="Sketcher::SketchObject" name="Sketch001" id="4526" />
-        <Object type="PartDesign::Pocket" name="Pocket" id="4528" />
-        <Object type="PartDesign::Fillet" name="Fillet" id="4532" />
-        <Object type="Sketcher::SketchObject" name="Sketch002" id="4533" />
-        <Object type="PartDesign::Hole" name="Hole" id="4535" />
-        <Object type="Part::Part2DObjectPython" name="ShapeString001" id="4537" />
-        <Object type="Part::Part2DObjectPython" name="ShapeString" id="4536" />
-        <Object type="App::MeasureDistance" name="Distance" id="4547" Touched="1" />
+        <Object type="Spreadsheet::Sheet" name="Spreadsheet" id="3425" />
+        <Object type="PartDesign::Body" name="Body" id="3426" />
+        <Object type="App::Origin" name="Origin" id="3427" />
+        <Object type="App::Line" name="X_Axis" id="3428" />
+        <Object type="App::Line" name="Y_Axis" id="3429" />
+        <Object type="App::Line" name="Z_Axis" id="3430" />
+        <Object type="App::Plane" name="XY_Plane" id="3431" />
+        <Object type="App::Plane" name="XZ_Plane" id="3432" />
+        <Object type="App::Plane" name="YZ_Plane" id="3433" />
+        <Object type="Sketcher::SketchObject" name="Sketch" id="3434" />
+        <Object type="PartDesign::Pad" name="Pad" id="3435" />
+        <Object type="Sketcher::SketchObject" name="Sketch001" id="3436" />
+        <Object type="PartDesign::Pocket" name="Pocket" id="3438" />
+        <Object type="PartDesign::Fillet" name="Fillet" id="3440" />
+        <Object type="Part::Part2DObjectPython" name="ShapeString" id="3445" />
+        <Object type="PartDesign::Pad" name="Pad001" id="3447" />
     </Objects>
-    <ObjectData Count="18">
+    <ObjectData Count="16">
+        <Object name="Spreadsheet">
+            <Properties Count="7" TransientCount="0">
+                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+                    <ExpressionEngine count="0">
+                    </ExpressionEngine>
+                </Property>
+                <Property name="Label" type="App::PropertyString" status="134217728">
+                    <String value="Spreadsheet"/>
+                </Property>
+                <Property name="Label2" type="App::PropertyString" status="67108992">
+                    <String value=""/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="648">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
+                    <Cells Count="44" xlink="1">
+                        <XLinks count="0">
+                        </XLinks>
+                        <Cell address="A1" backgroundColor="#bfbfbfff" />
+                        <Cell address="B1" backgroundColor="#bfbfbfff" />
+                        <Cell address="C1" backgroundColor="#bfbfbfff" />
+                        <Cell address="D1" backgroundColor="#bfbfbfff" />
+                        <Cell address="A2" content="Body Width" />
+                        <Cell address="B2" content="50" backgroundColor="#ffff00ff" displayUnit="mm" alias="body_width" />
+                        <Cell address="C2" content="Body face Board" />
+                        <Cell address="D2" content="=hole_radius / 2" displayUnit="mm" alias="bodyface_board" />
+                        <Cell address="A3" content="Body Depth" />
+                        <Cell address="B3" content="30" backgroundColor="#ffff00ff" displayUnit="mm" alias="body_depth" />
+                        <Cell address="C3" content="Board Length X" />
+                        <Cell address="D3" content="=body_width - bodyface_board * 2" alias="board_length_x" />
+                        <Cell address="A4" content="Body Height" />
+                        <Cell address="B4" content="4" backgroundColor="#ffff00ff" displayUnit="mm" alias="body_height" />
+                        <Cell address="C4" content="Board Length Y" />
+                        <Cell address="D4" content="=body_depth - bodyface_board * 2" alias="board_length_y" />
+                        <Cell address="A6" backgroundColor="#bfbfbfff" />
+                        <Cell address="B6" backgroundColor="#bfbfbfff" />
+                        <Cell address="C6" backgroundColor="#bfbfbfff" />
+                        <Cell address="D6" backgroundColor="#bfbfbfff" />
+                        <Cell address="C7" content="Body face Board hole" />
+                        <Cell address="D7" content="=bodyface_board + hole_radius" displayUnit="mm" alias="bodyface_board_hole" />
+                        <Cell address="A8" content="Hole radius" />
+                        <Cell address="B8" content="2.8" backgroundColor="#ffff00ff" displayUnit="mm" alias="hole_radius" />
+                        <Cell address="C8" content="Hole Point X" />
+                        <Cell address="D8" content="=-(body_width / 2 - bodyface_board - hole_radius * 1)" alias="hole_point_X" />
+                        <Cell address="A9" content="Imprint Height" />
+                        <Cell address="B9" content="=bodyface_board * 1.4" displayUnit="mm" alias="imprint_height" />
+                        <Cell address="C9" content="Hole Point Y" />
+                        <Cell address="D9" content="=body_depth / 2 - bodyface_board - hole_radius * 1" alias="hole_point_Y" />
+                        <Cell address="A11" backgroundColor="#bfbfbfff" />
+                        <Cell address="B11" backgroundColor="#bfbfbfff" />
+                        <Cell address="C11" backgroundColor="#bfbfbfff" />
+                        <Cell address="D11" backgroundColor="#bfbfbfff" />
+                        <Cell address="A12" content="Text String" />
+                        <Cell address="B12" content="TEXT" alignment="center|vcenter|vimplied" backgroundColor="#ffff00ff" alias="text_string" />
+                        <Cell address="C12" content="Text Offset X" />
+                        <Cell address="D12" content="-17.6" displayUnit="mm" alias="text_offset_x" />
+                        <Cell address="A13" content="Text Size" />
+                        <Cell address="B13" content="10" displayUnit="mm" alias="text_size" />
+                        <Cell address="C13" content="Text Offset Y" />
+                        <Cell address="D13" content="-4.3" displayUnit="mm" alias="text_offset_y" />
+                        <Cell address="A14" content="Text Tracking" />
+                        <Cell address="B14" content="1" displayUnit="mm" alias="text_tracking" />
+                    </Cells>
+                </Property>
+                <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">
+                    <ColumnInfo Count="0">
+                    </ColumnInfo>
+                </Property>
+                <Property name="rowHeights" type="Spreadsheet::PropertyRowHeights" status="218103808">
+                    <RowInfo Count="0">
+                    </RowInfo>
+                </Property>
+            </Properties>
+        </Object>
         <Object name="Body" Extensions="True">
             <Extensions Count="1">
                 <Extension type="App::OriginGroupExtension" name="OriginGroupExtension">
@@ -149,16 +231,14 @@
                     </ExpressionEngine>
                 </Property>
                 <Property name="Group" type="App::PropertyLinkList">
-                    <LinkList count="9">
+                    <LinkList count="7">
                         <Link value="Sketch"/>
                         <Link value="Pad"/>
                         <Link value="Sketch001"/>
                         <Link value="Pocket"/>
                         <Link value="Fillet"/>
-                        <Link value="Sketch002"/>
-                        <Link value="Hole"/>
                         <Link value="ShapeString"/>
-                        <Link value="ShapeString001"/>
+                        <Link value="Pad001"/>
                     </LinkList>
                 </Property>
                 <Property name="Label" type="App::PropertyString" status="134217728">
@@ -177,7 +257,7 @@
                     <Part file="PartShape.brp"/>
                 </Property>
                 <Property name="Tip" type="App::PropertyLink">
-                    <Link value="Hole"/>
+                    <Link value="Pad001"/>
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="648">
                     <Bool value="true"/>
@@ -368,7 +448,7 @@
                     <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="Constraints" type="Sketcher::PropertyConstraintList">
-                    <ConstraintList count="11">
+                    <ConstraintList count="14">
                         <Constrain Name="" Type="1" Value="0.0000000000000000" First="0" FirstPos="2" Second="1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
                         <Constrain Name="" Type="1" Value="0.0000000000000000" First="1" FirstPos="2" Second="2" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
                         <Constrain Name="" Type="1" Value="0.0000000000000000" First="2" FirstPos="2" Second="3" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
@@ -377,13 +457,21 @@
                         <Constrain Name="" Type="2" Value="0.0000000000000000" First="2" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
                         <Constrain Name="" Type="3" Value="0.0000000000000000" First="1" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
                         <Constrain Name="" Type="3" Value="0.0000000000000000" First="3" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="14" Value="0.0000000000000000" First="0" FirstPos="2" Second="2" SecondPos="2" Third="-1" ThirdPos="1" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="7" Value="50.0000000000000000" First="0" FirstPos="1" Second="0" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="6.6666665077209473" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="8" Value="30.0000000000000000" First="1" FirstPos="2" Second="0" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="6.6666665077209473" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="14" Value="0.0000000000000000" First="2" FirstPos="2" Second="0" SecondPos="2" Third="-1" ThirdPos="1" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="8" Value="30.0000000000000000" First="2" FirstPos="2" Second="0" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="3.8873014450073242" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="7" Value="50.0000000000000000" First="0" FirstPos="1" Second="0" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="3.8873014450073242" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="7" Value="-20.8000000000000007" First="4" FirstPos="3" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="4.7591195106506348" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="8" Value="10.8000000000000007" First="4" FirstPos="3" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="4.7591195106506348" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="11" Value="2.7999999999999998" First="4" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="3.4558305740356445" LabelPosition="10.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
                     </ConstraintList>
                 </Property>
                 <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="0">
+                    <ExpressionEngine count="5">
+                        <Expression path="Constraints[13]" expression="Spreadsheet.hole_radius"/>
+                        <Expression path="Constraints[9]" expression="Spreadsheet.body_depth"/>
+                        <Expression path="Constraints[10]" expression="Spreadsheet.body_width"/>
+                        <Expression path="Constraints[11]" expression="Spreadsheet.hole_point_X"/>
+                        <Expression path="Constraints[12]" expression="Spreadsheet.hole_point_Y"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="ExternalGeometry" type="App::PropertyLinkSubList">
@@ -394,7 +482,7 @@
                     <Bool value="true"/>
                 </Property>
                 <Property name="Geometry" type="Part::PropertyGeometryList" status="8192">
-                    <GeometryList count="4">
+                    <GeometryList count="5">
                         <Geometry  type="Part::GeomLineSegment">
                             <GeoExtensions count="1">
                                 <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
@@ -418,6 +506,12 @@
                                 <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
                             </GeoExtensions>
                             <LineSegment StartX="-25.0000000000000000" StartY="-15.0000000000000000" StartZ="0.0000000000000000" EndX="-25.0000000000000000" EndY="15.0000000000000000" EndZ="0.0000000000000000"/>
+                        </Geometry>
+                        <Geometry  type="Part::GeomCircle">
+                            <GeoExtensions count="1">
+                                <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
+                            </GeoExtensions>
+                            <Circle CenterX="-20.8000000000000007" CenterY="10.8000000000000007" CenterZ="0.0000000000000000" NormalX="0.0000000000000000" NormalY="0.0000000000000000" NormalZ="1.0000000000000000" AngleXU="-0.0000000000000000" Radius="2.7999999999999998"/>
                         </Geometry>
                     </GeometryList>
                 </Property>
@@ -454,7 +548,7 @@
         </Object>
         <Object name="Pad">
             <Properties Count="20" TransientCount="1">
-                <_Property name="_Body" type="App::PropertyLinkHidden" status="251658241"/>
+                <_Property name="_Body" type="App::PropertyLinkHidden" status="251658240"/>
                 <Property name="AddSubShape" type="Part::PropertyPartShape">
                     <Part file="PartShape2.brp"/>
                 </Property>
@@ -468,7 +562,8 @@
                     <PropertyVector valueX="1.0000000000000000" valueY="1.0000000000000000" valueZ="1.0000000000000000"/>
                 </Property>
                 <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="0">
+                    <ExpressionEngine count="1">
+                        <Expression path="Length" expression="Spreadsheet.body_height"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="Label" type="App::PropertyString" status="134217728">
@@ -530,28 +625,35 @@
                     <String value="Attacher::AttachEnginePlane"/>
                 </Property>
                 <Property name="AttachmentOffset" type="App::PropertyPlacement">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="4.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="Constraints" type="Sketcher::PropertyConstraintList">
-                    <ConstraintList count="14">
-                        <Constrain Name="" Type="1" Value="0.0000000000000000" First="0" FirstPos="2" Second="1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                    <ConstraintList count="15">
+                        <Constrain Name="" Type="11" Value="4.1999999999999993" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="1.7507823705673218" LabelPosition="10.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="7" Value="-20.8000000000000007" First="0" FirstPos="3" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="-1.5034770965576172" LabelPosition="0.2879924774169922" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="8" Value="10.8000000000000007" First="0" FirstPos="3" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="1.7507823705673218" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
                         <Constrain Name="" Type="1" Value="0.0000000000000000" First="1" FirstPos="2" Second="2" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
                         <Constrain Name="" Type="1" Value="0.0000000000000000" First="2" FirstPos="2" Second="3" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="2" Value="0.0000000000000000" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="2" Value="0.0000000000000000" First="2" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="3" Value="0.0000000000000000" First="1" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="3" Value="0.0000000000000000" First="3" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="14" Value="0.0000000000000000" First="0" FirstPos="2" Second="2" SecondPos="2" Third="-1" ThirdPos="1" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="8" Value="27.0000000000000000" First="1" FirstPos="2" Second="0" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="4.4688010215759277" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="1" Value="0.0000000000000000" First="0" FirstPos="1" Second="4" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
                         <Constrain Name="" Type="1" Value="0.0000000000000000" First="3" FirstPos="2" Second="4" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="7" Value="-20.1999999999999993" First="4" FirstPos="3" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="8" Value="10.1999999999999993" First="4" FirstPos="3" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0666961669921875" LabelPosition="1.1491777896881104" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="7" Value="47.0000000000000000" First="2" FirstPos="2" Second="1" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="2.9955313205718994" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="2" Value="0.0000000000000000" First="1" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="2" Value="0.0000000000000000" First="3" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="3" Value="0.0000000000000000" First="2" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="3" Value="0.0000000000000000" First="4" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="14" Value="0.0000000000000000" First="3" FirstPos="2" Second="1" SecondPos="2" Third="-1" ThirdPos="1" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="8" Value="27.1999999999999993" First="2" FirstPos="2" Second="2" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="2.9448640346527100" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="7" Value="47.2000000000000028" First="3" FirstPos="2" Second="3" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="2.9448640346527100" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="1" Value="0.0000000000000000" First="1" FirstPos="1" Second="0" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+                        <Constrain Name="" Type="1" Value="0.0000000000000000" First="4" FirstPos="2" Second="0" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10.0000000000000000" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
                     </ConstraintList>
                 </Property>
                 <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="0">
+                    <ExpressionEngine count="6">
+                        <Expression path=".AttachmentOffset.Base.z" expression="Spreadsheet.body_height"/>
+                        <Expression path="Constraints[12]" expression="Spreadsheet.board_length_x"/>
+                        <Expression path="Constraints[1]" expression="Spreadsheet.hole_point_X"/>
+                        <Expression path="Constraints[2]" expression="Spreadsheet.hole_point_Y"/>
+                        <Expression path="Constraints[11]" expression="Spreadsheet.board_length_y"/>
+                        <Expression path="Constraints[0]" expression="Spreadsheet.bodyface_board_hole"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="ExternalGeometry" type="App::PropertyLinkSubList">
@@ -559,39 +661,39 @@
                     </LinkSubList>
                 </Property>
                 <Property name="FullyConstrained" type="App::PropertyBool" status="218103808">
-                    <Bool value="false"/>
+                    <Bool value="true"/>
                 </Property>
                 <Property name="Geometry" type="Part::PropertyGeometryList" status="8192">
                     <GeometryList count="5">
-                        <Geometry  type="Part::GeomLineSegment">
-                            <GeoExtensions count="1">
-                                <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
-                            </GeoExtensions>
-                            <LineSegment StartX="-17.1547518974805548" StartY="13.4999999999999982" StartZ="0.0000000000000000" EndX="23.4999999999999964" EndY="13.4999999999999982" EndZ="0.0000000000000000"/>
-                        </Geometry>
-                        <Geometry  type="Part::GeomLineSegment">
-                            <GeoExtensions count="1">
-                                <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
-                            </GeoExtensions>
-                            <LineSegment StartX="23.4999999999999964" StartY="13.4999999999999982" StartZ="0.0000000000000000" EndX="23.4999999999999964" EndY="-13.5000000000000018" EndZ="0.0000000000000000"/>
-                        </Geometry>
-                        <Geometry  type="Part::GeomLineSegment">
-                            <GeoExtensions count="1">
-                                <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
-                            </GeoExtensions>
-                            <LineSegment StartX="23.4999999999999964" StartY="-13.5000000000000000" StartZ="0.0000000000000000" EndX="-23.5000000000000036" EndY="-13.5000000000000000" EndZ="0.0000000000000000"/>
-                        </Geometry>
-                        <Geometry  type="Part::GeomLineSegment">
-                            <GeoExtensions count="1">
-                                <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
-                            </GeoExtensions>
-                            <LineSegment StartX="-23.5000000000000036" StartY="-13.5000000000000000" StartZ="0.0000000000000000" EndX="-23.5000000000000036" EndY="7.1547518974805584" EndZ="0.0000000000000000"/>
-                        </Geometry>
                         <Geometry  type="Part::GeomArcOfCircle">
                             <GeoExtensions count="1">
                                 <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
                             </GeoExtensions>
-                            <ArcOfCircle CenterX="-20.1999999999999993" CenterY="10.1999999999999993" CenterZ="0.0000000000000000" NormalX="0.0000000000000000" NormalY="0.0000000000000000" NormalZ="1.0000000000000000" AngleXU="-0.0000000000000000" Radius="4.4903826124171511" StartAngle="3.8868639145330102" EndAngle="7.1087103730312640"/>
+                            <ArcOfCircle CenterX="-20.8000000000000007" CenterY="10.8000000000000007" CenterZ="0.0000000000000000" NormalX="0.0000000000000000" NormalY="0.0000000000000000" NormalZ="1.0000000000000000" AngleXU="-0.0000000000000000" Radius="4.1999999999999993" StartAngle="3.9826613241577489" EndAngle="7.0129129634065261"/>
+                        </Geometry>
+                        <Geometry  type="Part::GeomLineSegment">
+                            <GeoExtensions count="1">
+                                <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
+                            </GeoExtensions>
+                            <LineSegment StartX="-17.6695048315002197" StartY="13.5999999999999162" StartZ="0.0000000000000000" EndX="23.6000000000000014" EndY="13.5999999999999162" EndZ="0.0000000000000000"/>
+                        </Geometry>
+                        <Geometry  type="Part::GeomLineSegment">
+                            <GeoExtensions count="1">
+                                <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
+                            </GeoExtensions>
+                            <LineSegment StartX="23.6000000000000014" StartY="13.5999999999999162" StartZ="0.0000000000000000" EndX="23.6000000000000014" EndY="-13.5999999999999979" EndZ="0.0000000000000000"/>
+                        </Geometry>
+                        <Geometry  type="Part::GeomLineSegment">
+                            <GeoExtensions count="1">
+                                <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
+                            </GeoExtensions>
+                            <LineSegment StartX="23.6000000000000014" StartY="-13.5999999999999979" StartZ="0.0000000000000000" EndX="-23.5999999999999162" EndY="-13.5999999999999979" EndZ="0.0000000000000000"/>
+                        </Geometry>
+                        <Geometry  type="Part::GeomLineSegment">
+                            <GeoExtensions count="1">
+                                <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
+                            </GeoExtensions>
+                            <LineSegment StartX="-23.5999999999999197" StartY="-13.5999999999999979" StartZ="0.0000000000000000" EndX="-23.5999999999999197" EndY="7.6695048315002232" EndZ="0.0000000000000000"/>
                         </Geometry>
                     </GeometryList>
                 </Property>
@@ -618,7 +720,7 @@
                 </Property>
                 <Property name="Support" type="App::PropertyLinkSubList">
                     <LinkSubList count="1">
-                        <Link obj="Pad" sub="Face6"/>
+                        <Link obj="XY_Plane" sub=""/>
                     </LinkSubList>
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="648">
@@ -628,7 +730,7 @@
         </Object>
         <Object name="Pocket">
             <Properties Count="18" TransientCount="1">
-                <_Property name="_Body" type="App::PropertyLinkHidden" status="251658241"/>
+                <_Property name="_Body" type="App::PropertyLinkHidden" status="251658240"/>
                 <Property name="AddSubShape" type="Part::PropertyPartShape">
                     <Part file="PartShape5.brp"/>
                 </Property>
@@ -639,7 +741,8 @@
                     <Link value="Pad"/>
                 </Property>
                 <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="0">
+                    <ExpressionEngine count="1">
+                        <Expression path="Length" expression="Spreadsheet.imprint_height"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="Label" type="App::PropertyString" status="134217728">
@@ -649,7 +752,7 @@
                     <String value=""/>
                 </Property>
                 <Property name="Length" type="App::PropertyLength">
-                    <Float value="1.5000000000000000"/>
+                    <Float value="1.9599999999999997"/>
                 </Property>
                 <Property name="Length2" type="App::PropertyLength">
                     <Float value="100.0000000000000000"/>
@@ -690,26 +793,29 @@
         </Object>
         <Object name="Fillet">
             <Properties Count="12" TransientCount="1">
-                <_Property name="_Body" type="App::PropertyLinkHidden" status="251658241"/>
+                <_Property name="_Body" type="App::PropertyLinkHidden" status="251658240"/>
                 <Property name="AddSubShape" type="Part::PropertyPartShape" status="128">
                     <Part file="PartShape7.brp"/>
                 </Property>
                 <Property name="Base" type="App::PropertyLinkSub">
-                    <LinkSub value="Pocket" count="7">
+                    <LinkSub value="Pocket" count="9">
+                        <Sub value="Edge21"/>
+                        <Sub value="Edge22"/>
                         <Sub value="Edge5"/>
-                        <Sub value="Edge1"/>
                         <Sub value="Edge8"/>
                         <Sub value="Edge2"/>
-                        <Sub value="Edge19"/>
-                        <Sub value="Edge21"/>
-                        <Sub value="Edge23"/>
+                        <Sub value="Edge28"/>
+                        <Sub value="Edge26"/>
+                        <Sub value="Edge24"/>
+                        <Sub value="Edge1"/>
                     </LinkSub>
                 </Property>
                 <Property name="BaseFeature" type="App::PropertyLink" status="8">
                     <Link value="Pocket"/>
                 </Property>
                 <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="0">
+                    <ExpressionEngine count="1">
+                        <Expression path="Radius" expression="Spreadsheet.bodyface_board_hole"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="Label" type="App::PropertyString" status="134217728">
@@ -722,7 +828,7 @@
                     <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="Radius" type="App::PropertyQuantityConstraint">
-                    <Float value="5.0000000000000000"/>
+                    <Float value="4.1999999999999993"/>
                 </Property>
                 <Property name="Refine" type="App::PropertyBool">
                     <Bool value="false"/>
@@ -735,260 +841,6 @@
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="648">
                     <Bool value="false"/>
-                </Property>
-            </Properties>
-        </Object>
-        <Object name="Sketch002" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Part::AttachExtension" name="AttachExtension">
-                </Extension>
-            </Extensions>
-            <Properties Count="16" TransientCount="0">
-                <Property name="AttacherType" type="App::PropertyString" status="8">
-                    <String value="Attacher::AttachEnginePlane"/>
-                </Property>
-                <Property name="AttachmentOffset" type="App::PropertyPlacement">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="Constraints" type="Sketcher::PropertyConstraintList">
-                    <ConstraintList count="3">
-                        <Constrain Name="" Type="7" Value="20.1999999999999993" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="2.0079655647277832" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="8" Value="10.1999999999999993" First="-1" FirstPos="1" Second="0" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="2.0079655647277832" LabelPosition="0.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                        <Constrain Name="" Type="11" Value="3.2000000000000002" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="2.0079655647277832" LabelPosition="10.0000000000000000" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-                    </ConstraintList>
-                </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="0">
-                    </ExpressionEngine>
-                </Property>
-                <Property name="ExternalGeometry" type="App::PropertyLinkSubList">
-                    <LinkSubList count="0">
-                    </LinkSubList>
-                </Property>
-                <Property name="FullyConstrained" type="App::PropertyBool" status="218103808">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Geometry" type="Part::PropertyGeometryList" status="8192">
-                    <GeometryList count="1">
-                        <Geometry  type="Part::GeomCircle">
-                            <GeoExtensions count="1">
-                                <GeoExtension type="Sketcher::SketchGeometryExtension" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000"/>
-                            </GeoExtensions>
-                            <Circle CenterX="-20.1999999999999993" CenterY="10.1999999999999993" CenterZ="0.0000000000000000" NormalX="0.0000000000000000" NormalY="0.0000000000000000" NormalZ="1.0000000000000000" AngleXU="-0.0000000000000000" Radius="3.2000000000000002"/>
-                        </Geometry>
-                    </GeometryList>
-                </Property>
-                <Property name="Label" type="App::PropertyString" status="134217728">
-                    <String value="Sketch002"/>
-                </Property>
-                <Property name="Label2" type="App::PropertyString" status="67108992">
-                    <String value=""/>
-                </Property>
-                <Property name="MapMode" type="App::PropertyEnumeration">
-                    <Integer value="5"/>
-                </Property>
-                <Property name="MapPathParameter" type="App::PropertyFloat" status="8">
-                    <Float value="0.0000000000000000"/>
-                </Property>
-                <Property name="MapReversed" type="App::PropertyBool">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Placement" type="App::PropertyPlacement" status="8388612">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="4.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="Shape" type="Part::PropertyPartShape">
-                    <Part file="PartShape9.brp"/>
-                </Property>
-                <Property name="Support" type="App::PropertyLinkSubList">
-                    <LinkSubList count="1">
-                        <Link obj="Fillet" sub="Face5"/>
-                    </LinkSubList>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
-                    <Bool value="false"/>
-                </Property>
-            </Properties>
-        </Object>
-        <Object name="Hole">
-            <Properties Count="38" TransientCount="1">
-                <_Property name="_Body" type="App::PropertyLinkHidden" status="251658241"/>
-                <Property name="AddSubShape" type="Part::PropertyPartShape">
-                    <Part file="PartShape10.brp"/>
-                </Property>
-                <Property name="AllowMultiFace" type="App::PropertyBool">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="BaseFeature" type="App::PropertyLink" status="8">
-                    <Link value="Fillet"/>
-                </Property>
-                <Property name="Depth" type="App::PropertyLength">
-                    <Float value="25.0000000000000000"/>
-                </Property>
-                <Property name="DepthType" type="App::PropertyEnumeration">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Diameter" type="App::PropertyLength">
-                    <Float value="6.0000000000000000"/>
-                </Property>
-                <Property name="DrillForDepth" type="App::PropertyBool">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DrillPoint" type="App::PropertyEnumeration">
-                    <Integer value="1"/>
-                </Property>
-                <Property name="DrillPointAngle" type="App::PropertyAngle">
-                    <Float value="118.0000000000000000"/>
-                </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="0">
-                    </ExpressionEngine>
-                </Property>
-                <Property name="HoleCutCountersinkAngle" type="App::PropertyAngle" status="4">
-                    <Float value="90.0000000000000000"/>
-                </Property>
-                <Property name="HoleCutCustomValues" type="App::PropertyBool" status="4">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="HoleCutDepth" type="App::PropertyLength" status="4">
-                    <Float value="0.0000000000000000"/>
-                </Property>
-                <Property name="HoleCutDiameter" type="App::PropertyLength" status="4">
-                    <Float value="6.0999999999999996"/>
-                </Property>
-                <Property name="HoleCutType" type="App::PropertyEnumeration">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Label" type="App::PropertyString" status="134217728">
-                    <String value="Hole"/>
-                </Property>
-                <Property name="Label2" type="App::PropertyString" status="67108992">
-                    <String value=""/>
-                </Property>
-                <Property name="Midplane" type="App::PropertyBool">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="ModelActualThread" type="App::PropertyBool" status="4">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Placement" type="App::PropertyPlacement" status="8388620">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="Profile" type="App::PropertyLinkSub">
-                    <LinkSub value="Sketch002" count="0">
-                    </LinkSub>
-                </Property>
-                <Property name="Refine" type="App::PropertyBool">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Reversed" type="App::PropertyBool">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Shape" type="Part::PropertyPartShape">
-                    <Part file="PartShape11.brp"/>
-                </Property>
-                <Property name="Tapered" type="App::PropertyBool">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="TaperedAngle" type="App::PropertyAngle" status="4">
-                    <Float value="90.0000000000000000"/>
-                </Property>
-                <Property name="ThreadAngle" type="App::PropertyAngle" status="4">
-                    <Float value="0.0000000000000000"/>
-                </Property>
-                <Property name="ThreadClass" type="App::PropertyEnumeration" status="4">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ThreadCutOffInner" type="App::PropertyLength" status="4">
-                    <Float value="0.0000000000000000"/>
-                </Property>
-                <Property name="ThreadCutOffOuter" type="App::PropertyLength" status="4">
-                    <Float value="0.0000000000000000"/>
-                </Property>
-                <Property name="ThreadDirection" type="App::PropertyEnumeration" status="4">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ThreadFit" type="App::PropertyEnumeration" status="4">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ThreadPitch" type="App::PropertyLength" status="4">
-                    <Float value="0.0000000000000000"/>
-                </Property>
-                <Property name="ThreadSize" type="App::PropertyEnumeration" status="4">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ThreadType" type="App::PropertyEnumeration">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Threaded" type="App::PropertyBool" status="4">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="UpToFace" type="App::PropertyLinkSub">
-                    <LinkSub value="" count="0">
-                    </LinkSub>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </Object>
-        <Object name="ShapeString001" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Part::AttachExtension" name="AttachExtension">
-                </Extension>
-            </Extensions>
-            <Properties Count="17" TransientCount="0">
-                <Property name="AttacherType" type="App::PropertyString" status="8">
-                    <String value="Attacher::AttachEnginePlane"/>
-                </Property>
-                <Property name="AttachmentOffset" type="App::PropertyPlacement" status="8">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="0">
-                    </ExpressionEngine>
-                </Property>
-                <Property name="FontFile" type="App::PropertyFile" group="Draft" doc="Font file name" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="C:/Windows/Fonts/arial.ttf"/>
-                </Property>
-                <Property name="Label" type="App::PropertyString" status="134217728">
-                    <String value="ShapeString001"/>
-                </Property>
-                <Property name="Label2" type="App::PropertyString" status="67108992">
-                    <String value=""/>
-                </Property>
-                <Property name="MapMode" type="App::PropertyEnumeration">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="MapPathParameter" type="App::PropertyFloat" status="8">
-                    <Float value="0.0000000000000000"/>
-                </Property>
-                <Property name="MapReversed" type="App::PropertyBool" status="8">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Placement" type="App::PropertyPlacement" status="8388608">
-                    <PropertyPlacement Px="-15.6999999999999993" Py="-7.0000000000000000" Pz="3.5000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="Proxy" type="App::PropertyPythonObject">
-                    <Python value="IlNoYXBlU3RyaW5nIg==" encoded="yes" module="draftobjects.shapestring" class="ShapeString"/>
-                </Property>
-                <Property name="Shape" type="Part::PropertyPartShape">
-                    <Part file="PartShape12.brp"/>
-                </Property>
-                <Property name="Size" type="App::PropertyLength" group="Draft" doc="Height of text" attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="14.0000000000000000"/>
-                </Property>
-                <Property name="String" type="App::PropertyString" group="Draft" doc="Text string" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="543"/>
-                </Property>
-                <Property name="Support" type="App::PropertyLinkSubList">
-                    <LinkSubList count="0">
-                    </LinkSubList>
-                </Property>
-                <Property name="Tracking" type="App::PropertyLength" group="Draft" doc="Inter-character spacing" attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
-                    <Bool value="true"/>
                 </Property>
             </Properties>
         </Object>
@@ -1005,11 +857,16 @@
                     <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="0">
+                    <ExpressionEngine count="5">
+                        <Expression path=".Placement.Base.y" expression="Spreadsheet.text_offset_y"/>
+                        <Expression path=".Placement.Base.x" expression="Spreadsheet.text_offset_x"/>
+                        <Expression path="Size" expression="Spreadsheet.text_size"/>
+                        <Expression path="Tracking" expression="Spreadsheet.text_tracking"/>
+                        <Expression path="String" expression="Spreadsheet.text_string"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="FontFile" type="App::PropertyFile" group="Draft" doc="Font file name" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="C:/Windows/Fonts/arial.ttf"/>
+                    <String value="C:/WINDOWS/Fonts/arial.ttf"/>
                 </Property>
                 <Property name="Label" type="App::PropertyString" status="134217728">
                     <String value="ShapeString"/>
@@ -1027,19 +884,19 @@
                     <Bool value="false"/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="8388608">
-                    <PropertyPlacement Px="-19.3000000000000007" Py="-5.0000000000000000" Pz="3.5000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                    <PropertyPlacement Px="-17.6000000000000014" Py="-4.2999999999999998" Pz="4.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="Proxy" type="App::PropertyPythonObject">
                     <Python value="IlNoYXBlU3RyaW5nIg==" encoded="yes" module="draftobjects.shapestring" class="ShapeString"/>
                 </Property>
                 <Property name="Shape" type="Part::PropertyPartShape">
-                    <Part file="PartShape13.brp"/>
+                    <Part file="PartShape9.brp"/>
                 </Property>
                 <Property name="Size" type="App::PropertyLength" group="Draft" doc="Height of text" attr="0" ro="0" hide="0" status="2097152">
                     <Float value="10.0000000000000000"/>
                 </Property>
                 <Property name="String" type="App::PropertyString" group="Draft" doc="Text string" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="09876"/>
+                    <String value="TEXT"/>
                 </Property>
                 <Property name="Support" type="App::PropertyLinkSubList">
                     <LinkSubList count="0">
@@ -1053,28 +910,71 @@
                 </Property>
             </Properties>
         </Object>
-        <Object name="Distance">
-            <Properties Count="7" TransientCount="0">
-                <Property name="Distance" type="App::PropertyDistance" status="150994945">
-                    <Float value="1.5003164814156300"/>
+        <Object name="Pad001">
+            <Properties Count="20" TransientCount="1">
+                <_Property name="_Body" type="App::PropertyLinkHidden" status="251658240"/>
+                <Property name="AddSubShape" type="Part::PropertyPartShape">
+                    <Part file="PartShape10.brp"/>
                 </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108865">
-                    <ExpressionEngine count="0">
+                <Property name="AllowMultiFace" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="BaseFeature" type="App::PropertyLink" status="8">
+                    <Link value="Fillet"/>
+                </Property>
+                <Property name="Direction" type="App::PropertyVector">
+                    <PropertyVector valueX="1.0000000000000000" valueY="1.0000000000000000" valueZ="1.0000000000000000"/>
+                </Property>
+                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+                    <ExpressionEngine count="1">
+                        <Expression path="Length" expression="Spreadsheet.imprint_height"/>
                     </ExpressionEngine>
                 </Property>
-                <Property name="Label" type="App::PropertyString" status="134217729">
-                    <String value="Distance: 1,50 mm"/>
+                <Property name="Label" type="App::PropertyString" status="134217728">
+                    <String value="Pad001"/>
                 </Property>
                 <Property name="Label2" type="App::PropertyString" status="67108992">
                     <String value=""/>
                 </Property>
-                <Property name="P1" type="App::PropertyVector" status="1">
-                    <PropertyVector valueX="-20.5305042266845703" valueY="5.7262811660766602" valueZ="4.0000000000000000"/>
+                <Property name="Length" type="App::PropertyLength">
+                    <Float value="1.9599999999999997"/>
                 </Property>
-                <Property name="P2" type="App::PropertyVector" status="1">
-                    <PropertyVector valueX="-20.5611038208007812" valueY="5.7226467132568359" valueZ="2.5000000000000000"/>
+                <Property name="Length2" type="App::PropertyLength">
+                    <Float value="100.0000000000000000"/>
                 </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="649">
+                <Property name="Midplane" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Offset" type="App::PropertyLength">
+                    <Float value="0.0000000000000000"/>
+                </Property>
+                <Property name="Placement" type="App::PropertyPlacement" status="8388620">
+                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                </Property>
+                <Property name="Profile" type="App::PropertyLinkSub">
+                    <LinkSub value="ShapeString" count="0">
+                    </LinkSub>
+                </Property>
+                <Property name="Refine" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Reversed" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Shape" type="Part::PropertyPartShape">
+                    <Part file="PartShape11.brp"/>
+                </Property>
+                <Property name="Type" type="App::PropertyEnumeration">
+                    <Integer value="2"/>
+                </Property>
+                <Property name="UpToFace" type="App::PropertyLinkSub">
+                    <LinkSub value="" count="0">
+                    </LinkSub>
+                </Property>
+                <Property name="UseCustomVector" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="648">
                     <Bool value="true"/>
                 </Property>
             </Properties>
